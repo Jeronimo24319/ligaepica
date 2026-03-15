@@ -30,6 +30,13 @@ if ($result->num_rows === 1) {
         $_SESSION["nombre"] = $usuario["nombre"];
         $_SESSION["rol"] = $usuario["rol"];
 
+        // 🔴 Si es SUPERADMIN entra directo a la app
+        if ($usuario["rol"] === "superadmin") {
+            header("Location: /ligaepica_v2/");
+            exit();
+        }
+
+        // 🟡 Si no es superadmin debe elegir grupo
         header("Location: seleccionar_grupo.php");
         exit();
     }
