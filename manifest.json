@@ -1,0 +1,23 @@
+{
+"name": "Liga Épica Ciclista",
+"short_name": "Liga Épica",
+"start_url": "/ligaepica_v2/index.php",
+"display": "standalone",
+"orientation": "portrait",
+"background_color": "#121417",
+"theme_color": "#ff6a00",
+"icons": [
+{
+"src": "/ligaepica_v2/assets/img/app-icon.png",
+"sizes": "192x192",
+"type": "image/png",
+"purpose": "any maskable"
+},
+{
+"src": "/ligaepica_v2/assets/img/app-icon.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any maskable"
+}
+]
+}

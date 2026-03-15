@@ -1,0 +1,13 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /ligaepica_v2/
+
+RewriteRule ^login/?$ modules/auth/login.php [L]
+RewriteRule ^dashboard/?$ modules/dashboard/index.php [L]
+RewriteRule ^actividades/?$ modules/actividades/index.php [L]
+RewriteRule ^participaciones/?$ modules/actividades/mis_participaciones.php [L]
+RewriteRule ^clasificacion/?$ modules/clasificacion/index.php [L]
+RewriteRule ^usuarios/?$ modules/usuarios/index.php [L]
+RewriteRule ^grupos/?$ modules/grupos/index.php [L]
+RewriteRule ^actividad/([0-9]+)/?$ modules/actividades/participantes.php?id=$1 [L]
